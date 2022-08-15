@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    max-width: 90%;
+    margin: auto;
+}
+.preview, .memeBox{
+    border: 1px solid purple;
+    border-radius: 15px;
+    margin-bottom: 8px;
+}
+
+img{
+    width: 100%;;
+    max-height: 450px;
+    border-radius: 15px;
+    margin: auto;
+}
+
+input{
+    padding: 5px;
+    text-indent: 3px;
+    border-radius: 5px;
+    display: block;
+    width: 75%;
+    margin: 5px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(1, 1, 15);
+        background: linear-gradient(90deg, rgba(1, 1, 15, 0.09567577030812324) 0%, rgba(200, 120, 222, 0.5018382352941176) 100%);
+}
+
+button{
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-width: 4px;
+    background-color: rgb(187 86 187);
+    color: white;
+}
+div.previewButtons, div.memeBoxButtons{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.imgContainer{
+    position: relative;
+}
+.top, .bottom{
+    position: absolute;
+    
+    font-size: 2rem;
+    padding: 3px;
+    letter-spacing: 0.4px;
+    font-weight: bold;
+    text-align: center;
+    left: 15px;
+    width: 100%;
+}
+
+.top{
+    top: 15px;
+    
+}
+.bottom{
+    bottom: 15px;
+
+}
+@media only screen and (min-width: 800px){
+    main{
+        max-width: 600px;
+    }
+    input{
+        display: unset;
+        width: 50%;
+    }
+}
